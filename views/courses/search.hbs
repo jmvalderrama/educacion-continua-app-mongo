@@ -1,0 +1,13 @@
+{{>header}}
+<div class="container">
+  <h2>Seleccione un curso:</h2>
+  <form action="/courses/enrolled" method="GET">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        {{{ displaySelect }}}
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+  </form>
+</div>
+{{>footer}}

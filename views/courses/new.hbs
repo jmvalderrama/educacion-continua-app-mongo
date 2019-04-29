@@ -1,0 +1,43 @@
+{{>header}}
+<div class="container">
+  <h2>Crear un nuevo curso:</h2>
+  <br>
+  <form action="/courses/new" method="POST">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="course_id">ID:</label>
+        <input type="number" class="form-control" name="course_id" id="course_id" placeholder="ID" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="name">Nombre:</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="modality">Modalidad:</label>
+        <select class="form-control" id="modality" name="modality">
+          <option value="-" selected></option>
+          <option value="virtual">Virtual</option>
+          <option value="face-to-face">Presencial</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="price">Valor:</label>
+        <input type="number" class="form-control" name="price" id="price" placeholder="Valor" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="description">Descripción:</label>
+        <input type="text" class="form-control" name="description" id="description" placeholder="Descripción" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="hours">Intensidad horaria:</label>
+        <input type="number" class="form-control" name="hours" id="hours" placeholder="Horas" value="0">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form> 
+</div>
+{{>footer}}

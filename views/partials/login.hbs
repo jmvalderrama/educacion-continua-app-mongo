@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card mt-4 bg-success">
+      <form action="/users/login" method="POST" class="mb-4">
+        <h1 class="h3 mb-3 mt-4 font-weight-normal text-center text-white">Por favor, inicie sesión</h1>
+        
+        <div class="col-md-6 offset-md-3">
+          <div class="form-group mt-4">
+            <label for="username" class="sr-only">Usuario</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Usuario" required="" autofocus="">
+          </div>
+          <div class="form-group md-4">
+            <label for="password" class="sr-only">Contraseña</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña" required="">
+          </div>            
+          
+          <div class="row justify-content-center">
+            <div class="col-md-5 mb-2">
+              <button class="btn btn-lg btn-light btn-block" type="submit">Iniciar sesión</button>
+            </div>
+            <div class="col-md-5">
+              <a class="btn btn-lg btn-block btn-secondary" href="../users/sign" role="button">Registrarse</a>
+            </div> 
+          </div>
+        </div>
+              
+      </form>
+    </div>
+</div>

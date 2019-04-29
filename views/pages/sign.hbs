@@ -1,0 +1,45 @@
+{{>header}}
+<div class="container">
+  <div class="card mt-4 bg-success">
+      <form action="/users/sign" method="POST" class="mb-4">
+        <h1 class="h3 mb-3 mt-4 font-weight-normal text-center text-white">Registrar usuario</h1>
+        
+        <div class="col-md-6 offset-md-3">
+          <div class="form-group mt-4">
+            <label for="fullname" class="sr-only">Nombre completo</label>
+            <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Nombre completo" required>
+          </div>
+          <div class="form-group mt-4">
+            <label for="username" class="sr-only">Nombre de usuario</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Nombre de usuario" required>
+          </div>
+          <div class="form-group mt-4">
+            <label for="password" class="sr-only">Contraseña</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña" required>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <label for="document_id" class="sr-only">Documento de identidad</label>
+            <input type="text" id="document_id" name="document_id" class="form-control" placeholder="Documento de identidad" required>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="sr-only">Teléfono</label>
+            <input type="text" id="phone" name="phone" class="form-control" placeholder="Teléfono" required>
+            </div>
+          </div>
+          <div class="form-group mt-4">
+            <label for="mail" class="sr-only">Correo</label>
+            <input type="email" id="mail" name="mail" class="form-control" placeholder="Correo" required>
+          </div>            
+          
+          <div class="row justify-content-center">
+            <div class="col-md-5 mb-2">
+              <button class="btn btn-lg btn-light btn-block" type="submit">Registrar</button>
+            </div>
+          </div>
+        </div>
+              
+      </form>
+    </div>
+</div>
+{{>footer}}
